@@ -7,7 +7,7 @@ class Application extends Router
         if (empty($username = $_SESSION['user'])) {
             header('Location: login.php');
         }
-        //echo 'Welcome ' . $username . "!";
+        //handle user landing
 
         $this->add('/', 'index');
         $this->add('/login', 'login');
