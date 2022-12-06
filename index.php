@@ -1,5 +1,4 @@
 <?php
-session_start();
-include 'includes/al.php';
+include 'includes/session.php';
 
 $app = new Application();
