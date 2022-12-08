@@ -1,5 +1,7 @@
 <?php
-session_start();
+if (isset($_SESSION['user'])) {
+    header('Location: /');
+}
 if (isset($_POST['submit'])) {
     $_SESSION['user'] = htmlspecialchars($_POST['username']);
     header('Location: /');
